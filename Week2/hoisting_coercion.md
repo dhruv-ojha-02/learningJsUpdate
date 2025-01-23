@@ -28,6 +28,7 @@ Q. How Hoisting works with var, let and const?
 A. Temporal Dead Zone - Variables defined with let and const are hoisted but 
 without any default initialization with undefined, unlike var. -> will give Reference Error
 
+- Examples are given in [hoisting](./hoisting_examples.js)
 
 # JavaScript Scopes
 
@@ -62,6 +63,7 @@ num = 1.23;	// a floating point number
 - Can happen implicitly (e.g. alert converts any value to string before showing it to user)
 - Can be done explicitly (e.g. when we read a value from a string based source but expect a number instead)
 
+-Examples are given in [coercion](coercion.js)
 
 # Comparisons in JS
 
@@ -115,6 +117,6 @@ for (let key in user) {
 
 
 A good exercise on the concept of Chaining: 
-[exercise_with_solution](./chaining_exercise.js) File is provided in the folder
+[exercise_with_solution](./this_chaining_exercise.js) File is provided in the folder
 
 

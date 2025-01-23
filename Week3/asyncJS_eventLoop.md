@@ -1,6 +1,6 @@
 # Date: 20/01/25 (Monday)
 
-I tried understanding Prototype nut I could not understand most part of it. I will try it later once I finish rest of the important things in JS.
+I tried understanding Prototype but I could not understand most part of it. I will try it later once I finish rest of the important things in JS.
 
 Prototype in JS
 

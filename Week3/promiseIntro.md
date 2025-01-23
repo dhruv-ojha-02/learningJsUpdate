@@ -59,3 +59,6 @@ Explanation : display function is in the microtask queue hence it is prioritized
 - pending
 - resolve
 - reject
+
+
+- For examples of promise implementation, refer to [promise_examples](./promise.js)

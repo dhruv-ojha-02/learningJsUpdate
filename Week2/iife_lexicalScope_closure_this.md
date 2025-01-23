@@ -6,64 +6,27 @@
 -They are typically used to create a local scope for variables to prevent them from polluting the global scope, thus avoids 
 conflicting with other variables in the broader scope of your application.
 
+For examples, refer to [iife_examples](./iife.js)
 
 ### Lexical Scoping
 
 - The area where an item is defined or created.
 - The basic concept of lexical scoping is that an inner function can access the variables defined in the outer function.
 
+- JavaScript resolves variables by searching within the local scope first, 
+then progressively moving outward through parent scopes until it reaches the global scope.
 
-e.g.
-
-// Example of Lexical Scoping
-
-function outer(){
-    let user ="Dhruv";
-    // console.log("Key",key); //Reference error :key is not defined
-    
-    function inner(){
-        let key = "123";
-        console.log("Inner",user);
-    }
-    inner();
-}
-
-// console.log("Outer",user);  //Reference Error: user is not defined
-outer();
-
-
-
+For example, refer to [lexicalScope_examples](./lexicalScope.js)
 
 ### Closure
 
 - Closure is when a function is able to remember and access its lexical scope, even when the function is executed outside 
 that lexical scope (in a different scope).
 
-e.g.
+- Closures enable data hiding and abstraction
+- Closures retain variables between function calls
 
-// Closure 
-function outer(){
-    let user ="Dhruv";
-    
-    function inner(){
-        console.log(user);
-    }
-    
-    return inner;   //return the function reference
-}
-
-const myFunc = outer();
-myFunc();
-
-
-/*
-
-- since outer is executed ,its scope is gone and if thats the case,
-- how will lexical scoping work now
-- The thing is ,instead of only returning the function, its complete lexical scope is also returned to this myFunc variable
-this is what closure is and thus it also allows lexical scoping in
-
-*/
+- For example, refer to [closure_examples](./closure.js)
 
 ### Concept of ‘this’
 
@@ -98,3 +61,5 @@ function when it was created.
 - In other words, 'this' inside the arrow function is not bound to our call object, but instead is already bound to where the 
 call object is being created originally, which in this case is the global object. And because the global object does not have a caller property, 
 this.caller is undefined. 
+
+
