@@ -6,6 +6,8 @@ const promise = new Promise(function (resolve,reject){
 
 // In the example above, only the first one to resolve will be called and the rest will be ignored.
 
+
+
 // Example of promise implementation
 
 const promiseTwo = new Promise(function (resolve,reject){
@@ -48,3 +50,27 @@ const promiseThree = new Promise(function(resolve,reject){
 .finally(function(){
     console.log("I'll surely run!");
 })
+
+
+
+const promiseFour = fetch('https://jsonplaceholder.typicode.com/users');
+
+function getDataUsingThen(){
+
+    console.log("Hii Dhruv");
+    promiseFour.then(function(response){
+        return  data = response.json();
+    })
+    .then(function(data){
+        console.log(data);
+    })
+    .catch(function(error){
+        console.log("E", error);
+    });
+    console.log("Hello Dhruv!");
+}
+
+
+getDataUsingThen();
+
+
