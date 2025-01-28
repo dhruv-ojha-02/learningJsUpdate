@@ -1,5 +1,11 @@
 # Date: 20/01/25 (Monday)
 
+I started with reading about Prototype in JS, and got to learn about the prototype - based behaviour of JS.
+I did some examples to learn more about prototype and implemented custom function in objects using prototypal behaviour of JS.
+
+For example, refer to [prototype_examples](prototype.js)
+
+
 Bind() Method
 
 The Bind() Method creates a new function and when that new function is called it set this keyword to the first argument which is passed to the bind method, and if any other sequences of arguments preceding the first argument are passed to the bind method then they are passed as an argument to the new function when the new function is called.
