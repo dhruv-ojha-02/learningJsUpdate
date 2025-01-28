@@ -1,13 +1,5 @@
 # Date: 20/01/25 (Monday)
 
-I tried understanding Prototype but I could not understand most part of it. I will try it later once I finish rest of the important things in JS.
-
-Prototype in JS
-
-Prototypes are the mechanism by which JavaScript objects inherit features from one another.
-
-bind(), call() and apply() function in JS
-
 Bind() Method
 
 The Bind() Method creates a new function and when that new function is called it set this keyword to the first argument which is passed to the bind method, and if any other sequences of arguments preceding the first argument are passed to the bind method then they are passed as an argument to the new function when the new function is called.
